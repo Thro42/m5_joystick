@@ -2,9 +2,9 @@
 //% color="#008272"weight=100 icon="\uf11b" block="M5 Joystick"
 namespace m5joystick {
 export class joyStickVal {
-   valX: number;
-   valY: number;
-   button: number;
+   public valX: number;
+   public valY: number;
+   public button: number;
 }
 //% block="M5 Joysick Werte"
   export function SickVal() : joyStickVal {
