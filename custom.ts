@@ -1,6 +1,11 @@
 // Gib deinen Code hier ein
 //% color="#008272"weight=100 icon="\uf11b" block="M5 Joystick"
 namespace m5joystick {
+export class joyStickVal {
+   valX: number;
+   valY: number;
+   button: number;
+}
 //% block="M5 Joysick Werte"
   export function SickVal() : joyStickVal {
     let retVal: joyStickVal;
@@ -11,11 +16,4 @@ namespace m5joystick {
     retVal.button = buf[2];
     return retVal;
   }
-}
-
-//% blockNamespace=m5joystick
-class joyStickVal {
-   valX: number;
-   valY: number;
-   button: number;
 }
