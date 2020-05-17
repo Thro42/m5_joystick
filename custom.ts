@@ -8,21 +8,6 @@ export enum ValSelect {
     Button = 3,
 }
 
-export class joyStickVal {
-   public valX: number;
-   public valY: number;
-   public button: number;
-}
-//% block="M5 Joysick Werte"
-  export function SickVal() : joyStickVal {
-    let retVal: joyStickVal;
-    let buf = pins.createBuffer(3);
-    buf = pins.i2cReadBuffer(0x52, 3);
-    retVal.valX = buf[0];
-    retVal.valY = buf[1];
-    retVal.button = buf[2];
-    return retVal;
-  }
 //% block="M5 Joysick %joyStickVal Werte"
   export function axisVal(valSel: ValSelect ) : number {
     let retVal: number;
