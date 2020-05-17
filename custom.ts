@@ -38,7 +38,7 @@ export class joyStickVal {
         case ValSelect.Button: {
             retVal = buf[2];
         }
+    }
     return retVal;
   }
-
 }
