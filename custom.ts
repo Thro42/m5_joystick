@@ -12,7 +12,7 @@ export enum ValSelect {
   export function axisVal(valSel: ValSelect ) : number {
     let retVal: number;
     let buf = pins.createBuffer(3);
-    buf = pins.i2cReadBuffer(0x52, 3);
+    buf = pins.i2cReadBuffer(0x52, 3,true);
     switch(valSel) {
         case ValSelect.X: {
             retVal = buf[0];
