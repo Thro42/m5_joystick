@@ -1,7 +1,7 @@
 // Gib deinen Code hier ein
 //% color="#008272"weight=100 icon="\uf11b" block="M5 Joystick"
 namespace m5joystick {
-//% block="M5 Joysick %i2cMotor|run %n"
+//% block="M5 Joysick Werte"
   export function SickVal() : joyStickVal {
     let retVal: joyStickVal;
     let buf = pins.createBuffer(3);
